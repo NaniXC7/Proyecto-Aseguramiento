@@ -49,9 +49,7 @@ stage('API Tests (Newman)') {
     steps {
         dir("${env.WORKSPACE}") {
             bat '''
-npx newman run postman\\QA-demo.postman_collection.json ^
-  -e postman\\QA-demo.postman_environment.json ^
-  -r junit --reporter-junit-export newman.xml || exit 0
+npx newman run postman\\QA-demo.postman_collection.json ^ -e postman\\QA-demo.postman_environment.json ^ -r junit --reporter-junit-export newman.xml || exit 0
             '''
         }
     }

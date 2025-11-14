@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites name="QA Demo API" tests="4" time="0.000">
-  <testsuite name="Login exitoso" id="56bf9cb0-c909-47e6-bd38-7930355b5f5d" timestamp="2025-11-14T09:59:13.235Z" tests="0" failures="0" errors="1" time="0.000">
+  <testsuite name="Login exitoso" id="d4ee08c9-7e13-4947-8134-bb2c078a0404" timestamp="2025-11-14T10:30:22.299Z" tests="0" failures="0" errors="1" time="0.000">
     <system-err><![CDATA[Iteration: 0
 RequestError: Error: runtime:extensions~request: request url is empty
     at Requester.request (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:421:26)
@@ -23,7 +23,7 @@ RequestError: Error: runtime:extensions~request: request url is empty
 ---
 ]]></system-err>
   </testsuite>
-  <testsuite name="Crear producto" id="fe69b1d9-df42-45d6-b0e5-8f109d023d3b" timestamp="2025-11-14T09:59:13.235Z" tests="0" failures="0" errors="1" time="0.000">
+  <testsuite name="Crear producto" id="a41e5f8e-16aa-455e-b466-c2f17a8c51eb" timestamp="2025-11-14T10:30:22.299Z" tests="0" failures="0" errors="1" time="0.000">
     <system-err><![CDATA[Iteration: 0
 RequestError: Error: runtime:extensions~request: request url is empty
     at Requester.request (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:421:26)
@@ -46,7 +46,7 @@ RequestError: Error: runtime:extensions~request: request url is empty
 ---
 ]]></system-err>
   </testsuite>
-  <testsuite name="Obtener producto por ID" id="133780af-b08d-4d35-8e81-5f8a464a3c41" timestamp="2025-11-14T09:59:13.235Z" tests="0" failures="0" errors="1" time="0.000">
+  <testsuite name="Obtener producto por ID" id="c4d75a1c-b21e-4135-8d7e-8f0a73e3aab0" timestamp="2025-11-14T10:30:22.299Z" tests="0" failures="0" errors="1" time="0.000">
     <system-err><![CDATA[Iteration: 0
 RequestError: Error: runtime:extensions~request: request url is empty
     at Requester.request (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:421:26)
@@ -69,7 +69,7 @@ RequestError: Error: runtime:extensions~request: request url is empty
 ---
 ]]></system-err>
   </testsuite>
-  <testsuite name="Endpoint protegido sin token" id="c9966d8a-32c2-4fab-8996-133bc161f565" timestamp="2025-11-14T09:59:13.235Z" tests="0" failures="0" errors="1" time="0.000">
+  <testsuite name="Endpoint protegido sin token" id="c0528e29-3787-4b33-b1ac-dd4df4c186cc" timestamp="2025-11-14T10:30:22.299Z" tests="0" failures="0" errors="1" time="0.000">
     <system-err><![CDATA[Iteration: 0
 RequestError: Error: runtime:extensions~request: request url is empty
     at Requester.request (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:421:26)
