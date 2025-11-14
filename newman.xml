@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="QA Demo API" tests="4" time="0.000">
+  <testsuite name="Login exitoso" id="56bf9cb0-c909-47e6-bd38-7930355b5f5d" timestamp="2025-11-14T09:59:13.235Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:443:29)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Crear producto" id="fe69b1d9-df42-45d6-b0e5-8f109d023d3b" timestamp="2025-11-14T09:59:13.235Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:443:29)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Obtener producto por ID" id="133780af-b08d-4d35-8e81-5f8a464a3c41" timestamp="2025-11-14T09:59:13.235Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:443:29)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+  </testsuite>
+  <testsuite name="Endpoint protegido sin token" id="c9966d8a-32c2-4fab-8996-133bc161f565" timestamp="2025-11-14T09:59:13.235Z" tests="0" failures="0" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: runtime:extensions~request: request url is empty
+    at Requester.request (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:421:26)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:156:37
+    at Requester.create (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester.js:508:16)
+    at RequesterPool.create (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\requester\requester-pool.js:67:22)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\postman-runtime\lib\runner\extensions\http-request.command.js:105:32
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:252:13
+    at wrapper (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:273:20)
+    at replenish (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:443:29)
+    at C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:453:13
+    at eachOfLimit (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:479:36)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+    at eachOfSeries (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:815:16)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+    at _asyncMap (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:245:16)
+    at mapSeries (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:839:16)
+    at awaitable (C:\Users\danie\AppData\Roaming\npm\node_modules\newman\node_modules\async\dist\async.js:212:32)
+
+---
+]]></system-err>
+  </testsuite>
+</testsuites>
