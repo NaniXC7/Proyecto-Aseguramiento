@@ -9,13 +9,11 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                // Si usas SCM (GitHub/GitLab), Jenkins rellenará esto solo con "checkout scm"
+                // Obtiene el código desde el repo configurado en el job
                 checkout scm
             }
         }
-        
 
-        // PRUEBA 1: build del backend + seed de la base
         stage('Backend Build & Seed') {
             steps {
                 dir('server') {
@@ -25,21 +23,19 @@ pipeline {
             }
         }
 
-        // PRUEBA 2: levantar API y hacer healthcheck
         stage('API Healthcheck') {
             steps {
                 dir('server') {
                     // Levanta la API en segundo plano
                     bat 'start /b npm start'
                 }
-                // Darle un tiempito para que arranque
+                // Espera unos segundos a que arranque
                 bat 'ping 127.0.0.1 -n 5 > nul'
-                // Healthcheck
-                bat "curl -f http://localhost:${API_PORT}/api/health"
+                // Healthcheck a la API
+                bat 'curl -f http://localhost:%API_PORT%/api/health'
             }
         }
 
-        // PRUEBA 3: build del frontend
         stage('Frontend Build') {
             steps {
                 dir('web') {
@@ -49,36 +45,35 @@ pipeline {
             }
         }
 
-        // PRUEBA 4: ejecutar colección Postman con Newman
         stage('API Tests (Newman)') {
             steps {
-                // Instalar newman si no está
-                bat '''
-IF NOT EXIST "%APPDATA%\\npm\\newman.cmd" (
-  npm install -g newman
-)
-newman run postman\\QA-demo.postman_collection.json ^
+                // Ejecuta Newman desde la raíz del workspace
+                dir("${env.WORKSPACE}") {
+                    bat '''
+npx newman run postman\\QA-demo.postman_collection.json ^
   -e postman\\QA-demo.postman_environment.json ^
   -r junit --reporter-junit-export newman.xml
-                '''
+                    '''
+                }
             }
             post {
                 always {
+                    // Publica el reporte JUnit generado por Newman
                     junit 'newman.xml'
                 }
             }
         }
 
-        // PRUEBA 5: ejecutar pruebas E2E de Selenium
         stage('UI E2E (Selenium)') {
             steps {
-                dir('e2e') {
+                dir('2e2') {
                     bat 'mvn test'
                 }
             }
             post {
                 always {
-                    junit 'e2e\\target\\surefire-reports\\*.xml'
+                    // Publica los reportes de pruebas de Maven/Selenium
+                    junit '2e2\\target\\surefire-reports\\*.xml'
                 }
             }
         }
@@ -86,7 +81,7 @@ newman run postman\\QA-demo.postman_collection.json ^
 
     post {
         always {
-            // Intentar matar procesos node que hayan quedado
+            // Intenta cerrar cualquier proceso node que haya quedado vivo
             bat 'taskkill /IM node.exe /F || exit /B 0'
         }
     }
