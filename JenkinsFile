@@ -13,6 +13,7 @@ pipeline {
                 checkout scm
             }
         }
+        
 
         // PRUEBA 1: build del backend + seed de la base
         stage('Backend Build & Seed') {
